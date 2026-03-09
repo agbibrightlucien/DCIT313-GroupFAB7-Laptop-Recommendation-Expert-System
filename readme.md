@@ -9,15 +9,15 @@ A rule-based expert system that recommends the best laptop for you based on your
 
 ## Group Members
 
-| # | Name | Student ID |
-|---|------|------------|
-| 1 | Asantewaa Isabella | 22069268 |
-| 2 | Agbi Lucien Bright Junior | 22045903 |
-| 3 | Crystal Hazekawa | 22244923 |
-| 4 | Loretta Opoku Nsiah | 22098316 |
-| 5 | Gabriel Ofobiri Twum | 22044996 |
-| 6 | Anaam Francis Asiaktewon | 22050404 |
-| 7 | Michael Gorswin Achel | 22056801 |
+| #   | Name                      | Student ID |
+| --- | ------------------------- | ---------- |
+| 1   | Asantewaa Isabella        | 22069268   |
+| 2   | Agbi Bright Lucien Junior | 22045903   |
+| 3   | Crystal Hazekawa          | 22244923   |
+| 4   | Loretta Opoku Nsiah       | 22098316   |
+| 5   | Gabriel Ofobiri Twum      | 22044996   |
+| 6   | Anaam Francis Asiaktewon  | 22050404   |
+| 7   | Michael Gorswin Achel     | 22056801   |
 
 ---
 
@@ -25,7 +25,7 @@ A rule-based expert system that recommends the best laptop for you based on your
 
 - Classifies user budget into **low** (≤ $700), **medium** ($701–$1200), and **high** (> $1200).
 - Supports five usage categories: **Gaming**, **Programming**, **AI/ML**, **General (Student)**, and **Office (Business)**.
-- Recommends a laptop *type* with ideal specifications (CPU, RAM, Storage, GPU, Battery).
+- Recommends a laptop _type_ with ideal specifications (CPU, RAM, Storage, GPU, Battery).
 - Suggests **specific real-world laptop models** that match the recommended type and fit within the user's budget.
 - Provides a human-readable **explanation** for every recommendation.
 - Uses Prolog's backward-chaining inference engine for logical reasoning.
@@ -43,11 +43,12 @@ A rule-based expert system that recommends the best laptop for you based on your
 └──────────────┘       └──────────────────┘       └───────────────────────┘
                               │
                               ▼
-                     Recommendation + 
+                     Recommendation +
                      Matching Laptops
 ```
 
 **Flow:**
+
 1. The user answers four questions (budget, use, portability, battery).
 2. Python asserts these answers as Prolog facts.
 3. Prolog applies its recommendation rules, finds specs, generates an explanation, and filters matching laptop models within the budget.
@@ -71,19 +72,19 @@ A rule-based expert system that recommends the best laptop for you based on your
 
 ## Technologies
 
-| Technology | Role |
-|------------|------|
-| **SWI-Prolog** | Knowledge base, inference engine, rule-based reasoning |
-| **Python 3** | User interface and I/O |
-| **pyswip** | Python ↔ Prolog bridge library |
-| **Git / GitHub** | Version control and collaboration |
+| Technology       | Role                                                   |
+| ---------------- | ------------------------------------------------------ |
+| **SWI-Prolog**   | Knowledge base, inference engine, rule-based reasoning |
+| **Python 3**     | User interface and I/O                                 |
+| **pyswip**       | Python ↔ Prolog bridge library                         |
+| **Git / GitHub** | Version control and collaboration                      |
 
 ---
 
 ## Prerequisites
 
 1. **Python 3.8+** — [python.org](https://www.python.org/downloads/)
-2. **SWI-Prolog** — [swi-prolog.org](https://www.swi-prolog.org/Download.html)  
+2. **SWI-Prolog** — [swi-prolog.org](https://www.swi-prolog.org/Download.html)
    - During installation on Windows, **check the option to add SWI-Prolog to PATH**.
 3. **pyswip** Python package.
 
@@ -116,12 +117,12 @@ python interface.py
 
 The system will prompt you for four inputs:
 
-| Prompt | Accepted Values |
-|--------|----------------|
-| **Budget (USD)** | Any positive integer (e.g. `1500`) |
-| **Primary use** | `gaming`, `programming`, `ai_ml`, `general`, `office` |
-| **Portability** | `high`, `low` |
-| **Battery requirement** | `high`, `medium`, `low` |
+| Prompt                  | Accepted Values                                       |
+| ----------------------- | ----------------------------------------------------- |
+| **Budget (USD)**        | Any positive integer (e.g. `1500`)                    |
+| **Primary use**         | `gaming`, `programming`, `ai_ml`, `general`, `office` |
+| **Portability**         | `high`, `low`                                         |
+| **Battery requirement** | `high`, `medium`, `low`                               |
 
 ---
 
@@ -174,23 +175,23 @@ and your budget is 2000.
 
 ### Laptop Categories & Rules
 
-| Category | Triggers When |
-|----------|---------------|
-| **Gaming** | Use = `gaming` and budget is **high** (> $1200) |
-| **AI / ML** | Use = `ai_ml` and budget is **high** (> $1200) |
+| Category        | Triggers When                                                     |
+| --------------- | ----------------------------------------------------------------- |
+| **Gaming**      | Use = `gaming` and budget is **high** (> $1200)                   |
+| **AI / ML**     | Use = `ai_ml` and budget is **high** (> $1200)                    |
 | **Programming** | Use = `programming` and budget is **medium** or **high** (> $700) |
-| **Student** | Use = `general`, portability = `high`, budget is **low** (≤ $700) |
-| **Business** | Use = `office`, battery = `high`, portability = `high` |
+| **Student**     | Use = `general`, portability = `high`, budget is **low** (≤ $700) |
+| **Business**    | Use = `office`, battery = `high`, portability = `high`            |
 
 ### Laptop Models in the Database (26 total)
 
-| Category | Models |
-|----------|--------|
-| Gaming | ASUS ROG Strix G16, MSI Katana 15, Lenovo Legion Pro 5, ASUS ROG Zephyrus G16, Acer Nitro 5 |
+| Category    | Models                                                                                                                |
+| ----------- | --------------------------------------------------------------------------------------------------------------------- |
+| Gaming      | ASUS ROG Strix G16, MSI Katana 15, Lenovo Legion Pro 5, ASUS ROG Zephyrus G16, Acer Nitro 5                           |
 | Programming | MacBook Pro 14 M3, Dell XPS 15, ThinkPad X1 Carbon Gen 11, MacBook Air 15 M3, HP Spectre x360 16, Framework Laptop 16 |
-| AI / ML | Lenovo ThinkPad P16, Dell Precision 5680, MSI Creator Z17, ASUS ProArt Studiobook, MacBook Pro 16 M3 Max |
-| Student | Acer Aspire 5, Lenovo IdeaPad 3, HP Laptop 15, ASUS VivoBook 15, Dell Inspiron 15 |
-| Business | ThinkPad T14s Gen 4, HP EliteBook 840 G10, Dell Latitude 7440, MacBook Air 13 M3, Lenovo ThinkPad X1 Nano |
+| AI / ML     | Lenovo ThinkPad P16, Dell Precision 5680, MSI Creator Z17, ASUS ProArt Studiobook, MacBook Pro 16 M3 Max              |
+| Student     | Acer Aspire 5, Lenovo IdeaPad 3, HP Laptop 15, ASUS VivoBook 15, Dell Inspiron 15                                     |
+| Business    | ThinkPad T14s Gen 4, HP EliteBook 840 G10, Dell Latitude 7440, MacBook Air 13 M3, Lenovo ThinkPad X1 Nano             |
 
 ---
 

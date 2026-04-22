@@ -9,15 +9,15 @@ A rule-based expert system that recommends the best laptop for you based on your
 
 ## Group Members
 
-| #   | Name                            | Github Username    |     | Student ID |
-| --- | -------------------------       | ------------------ |     | ---------- |
-| 1   | Asantewaa Isabella              | [santy359]         |     | 22069268   |
-| 2   | Agbi Bright Lucien Junior       | [agbibrightlucien] |     | 22045903   |
-| 3   | Crystal Hazekawa                | [crystalhazekawa]  |     | 22244923   |
-| 4   | Loretta Opoku Nsiah             | [⁠lotteniels]       |     | 22098316   |
-| 5   | Gabriel Ofobiri Twum            | [⁠GOTwum]           |     | 22044996   |
-| 6   | Anaam Francis Asiaktewon        |                    |     | 22050404   |
-| 7   | Michael Gorswin Achel           | [mikeachel]        |     | 22056801   |
+| # | Name                          | GitHub Username        | Student ID |
+|---|-------------------------------|------------------------|------------|
+| 1 | Asantewaa Isabella            | [santy359]             | 22069268   |
+| 2 | Agbi Bright Lucien Junior     | [agbibrightlucien]     | 22045903   |
+| 3 | Crystal Hazekawa              | [crystalhazekawa]      | 22244923   |
+| 4 | Loretta Opoku Nsiah           | [lotteniels]           | 22098316   |
+| 5 | Gabriel Ofobiri Twum          | [GOTwum]               | 22044996   |
+| 6 | Anaam Francis Asiaktewon      |                        | 22050404   |
+| 7 | Michael Gorswin Achel         | [mikeachel]            | 22056801   |
 
 ---
 

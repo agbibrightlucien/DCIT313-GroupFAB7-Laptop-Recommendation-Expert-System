@@ -16,7 +16,7 @@ A rule-based expert system that recommends the best laptop for you based on your
 | 3 | Crystal Hazekawa              | [crystalhazekawa]      | 22244923   |
 | 4 | Lorretta Opoku Nsiah           | [lotteniels]           | 22098316   |
 | 5 | Gabriel Ofobiri Twum          | [GOTwum]               | 22044996   |
-| 6 | Anaam Francis Asiaktewon      |  AnaamFrancis                      | 22050404   |
+| 6 | Anaam Francis Asiaktewon      |  [AnaamFrancis]                      | 22050404   |
 | 7 | Michael Gorswin Achel         | [mikeachel]            | 22056801   |
 
 ---
